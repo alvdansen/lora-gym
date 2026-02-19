@@ -8,6 +8,8 @@ Open-source, production-ready training pipeline for character identity, motion, 
 
 Currently supports the **Wan 2.1** and **Wan 2.2** model family with 16 training templates across every variant (T2V, I2V, 2.1, 2.2, Lightning-merged, and vanilla), dual-platform deployment (Modal and RunPod), and a complete dataset captioning toolkit.
 
+> **[Notion Knowledge Base](https://www.notion.so/wan-2-2-2-1-musubi-gym-3096930d2e11812b9537dde1fa7942aa)** — Full training methodology, MoE architecture deep-dive, empirical findings, recommended settings, and active research notes.
+
 ## What's In the Box
 
 **Captioning Tools** — Two Python scripts that auto-caption your images and videos for LoRA training. Point them at a folder, set your anchor word, and they generate `.txt` caption files that musubi-tuner reads automatically. Gemini (free) or Replicate (fast).
@@ -129,7 +131,7 @@ Quality over speed. Lower learning rates (2e-5 to 8e-5) consistently outperform 
 
 Our templates document several original findings including bug fixes for undocumented issues in musubi-tuner and validated hyperparameter defaults derived from cross-referencing multiple practitioners' results in the space, rather than untested community defaults.
 
-For the full training methodology, MoE architecture deep-dive, empirical findings, and active research — see our [Notion knowledge base](https://www.notion.so/wan-2-2-2-1-musubi-gym-3096930d2e11812b9537dde1fa7942aa).
+For the full training methodology, MoE architecture deep-dive, empirical findings, and active research — see our **[Notion knowledge base](https://www.notion.so/wan-2-2-2-1-musubi-gym-3096930d2e11812b9537dde1fa7942aa)**.
 
 ## What's Coming
 
