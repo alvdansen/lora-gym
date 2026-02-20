@@ -21,7 +21,7 @@ Usage:
 Get a Gemini API key free at: https://aistudio.google.com/apikey
 
 Set API key in PowerShell:
-  $env:GEMINI_API_KEY = "AIzaSyBt3QVKZQYa8aDjHu9xkYKSKQkSNR5-StY"
+  $env:GEMINI_API_KEY = "INSERT_YOUR_GEMINI_API_KEY_HERE"
 """
 
 import os
@@ -35,7 +35,7 @@ from pathlib import Path
 
 # Your Gemini API key — set as environment variable GEMINI_API_KEY
 # In PowerShell: $env:GEMINI_API_KEY = "your-key-here"
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyBt3QVKZQYa8aDjHu9xkYKSKQkSNR5-StY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "INSERT_YOUR_GEMINI_API_KEY_HERE")
 
 # Dataset folders — set these to your actual paths
 IMAGES_DIR = r"datasets\annika\images"    # <-- Your images folder
