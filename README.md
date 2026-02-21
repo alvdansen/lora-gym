@@ -41,7 +41,7 @@ Configure your dataset path and anchor word in the script's `CONFIG` section. Se
 ```bash
 pip install modal
 python -m modal setup
-python -m modal secret create my-huggingface-secret HF_TOKEN=hf_your_token
+python -m modal run templates/modal/train_wan22_t2v_lightning.py::add_to_volume_datasets
 
 # Upload dataset
 python -m modal run templates/modal/train_wan22_t2v_lightning.py::add_to_volume_datasets
@@ -174,6 +174,12 @@ For the full training methodology, MoE architecture deep-dive, empirical finding
 ## Acknowledgments
 
 This project builds on [musubi-tuner](https://github.com/kohya-ss/musubi-tuner) by kohya-ss and [AI Toolkit](https://github.com/ostris/ai-toolkit) by Ostris. We're grateful to the ML researchers and engineers who helped us develop our understanding of model training, and to the practitioners sharing their findings in GitHub discussions, CivitAI guides, and Discord channels — Sarania, GhostInShell, Taz, ComfyTinker, and many others. The community knowledge you've built is the foundation everything here stands on.
+
+## Support
+
+If you find this project useful, consider buying us a coffee. It helps us keep the lights on and the GPUs warm.
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/alvdansen)
 
 ## License
 
